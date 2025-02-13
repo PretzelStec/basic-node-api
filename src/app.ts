@@ -4,6 +4,10 @@ const app = express();
 
 app.use(json());
 
+app.get("/", (_, res: Response) => {
+    res.send("Hello, world!");
+})
+
 app.get(
 	"/hello-world/:something",
 	(req: Request<{ something: string }>, res: Response, _) => {

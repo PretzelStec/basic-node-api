@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   node-app:
-    image: pretzelstec/basic-node-api:latest  # Replace with your actual Docker Hub repo
+    image: 10.0.0.99:32768/basic-node-api:latest  # Replace with your actual Docker Hub repo
     container_name: basic-node-api
     restart: unless-stopped
     ports:
